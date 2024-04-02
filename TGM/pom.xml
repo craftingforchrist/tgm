@@ -57,13 +57,25 @@
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
+
+<!--        <repository>-->
+<!--            <id>maven.sk89q.io</id>-->
+<!--            <url>https://maven.sk89q.com/repo/</url>-->
+<!--        </repository>-->
+
         <repository>
-            <id>maven.sk89q.io</id>
-            <url>https://maven.sk89q.com/repo/</url>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
+
         <repository>
-            <id>bgm</id>
-            <url>https://maven.bgmp.cl/</url>
+            <id>papermc</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
+        </repository>
+
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/BGMP/CommandFramework</url>
         </repository>
     </repositories>
 
@@ -73,23 +85,32 @@
             <artifactId>warzone-api</artifactId>
             <version>${project.version}</version>
         </dependency>
+
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.18-R0.1-SNAPSHOT</version>
+            <version>1.20.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-		<dependency>
-			<groupId>org.spigotmc</groupId>
-			<artifactId>spigot</artifactId>
-			<version>1.18-R0.1-SNAPSHOT</version>
-			<classifier>remapped-mojang</classifier>
-			<scope>provided</scope>
-		</dependency>
+
         <dependency>
-            <groupId>cl.bgmp</groupId>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.20.4-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.spigotmc</groupId>-->
+<!--			<artifactId>spigot</artifactId>-->
+<!--			<version>1.18-R0.1-SNAPSHOT</version>-->
+<!--			<classifier>remapped-mojang</classifier>-->
+<!--			<scope>provided</scope>-->
+<!--		</dependency>-->
+
+        <dependency>
+            <groupId>cl.bgm</groupId>
             <artifactId>command-framework-bukkit</artifactId>
-            <version>1.0.3-SNAPSHOT</version>
+            <version>1.0.4-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.bukkit</groupId>
@@ -119,20 +140,19 @@
         <dependency>
             <groupId>com.github.ProtocolSupport</groupId>
             <artifactId>ProtocolSupport</artifactId>
-            <version>master-1f834da42d-1</version>
-            <scope>provided</scope>
+            <version>5f712a969a</version>
         </dependency>
 
         <dependency>
             <groupId>org.eclipse.jgit</groupId>
             <artifactId>org.eclipse.jgit</artifactId>
-            <version>5.7.0.202003110725-r</version>
+            <version>6.8.0.202311291450-r</version>
         </dependency>
 
         <dependency>
             <groupId>com.sk89q.worldedit</groupId>
             <artifactId>worldedit-bukkit</artifactId>
-            <version>7.2.0-SNAPSHOT</version>
+            <version>7.3.0</version>
             <scope>provided</scope>
         </dependency>
 
